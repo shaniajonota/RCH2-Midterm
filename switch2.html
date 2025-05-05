@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click-On</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    .navbar-text {
+      font-weight: bold;
+      color: white;
+      margin: 0;
+    }
+
+    .product-title {
+      color: #e60012;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    .product-card {
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .btn-compare {
+      background-color: #e60012;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn-compare:hover {
+      background-color: #a80114;
+    }
+
+    .footer {
+      background-color: #e60012;
+      text-align: center;
+      padding: 20px 0;
+      color: white;
+      font-size: 0.9rem;
+      font-family: Arial, sans-serif;
+    }
+
+    .product-section {
+      padding: 60px 0;
+    }
+
+    .product-description {
+      font-size: 1.2rem;
+      color: #555;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .feature-list {
+      padding: 20px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+    }
+
+    .video-container {
+      max-width: 100%;
+      height: 500px;
+      margin-top: 30px;
+    }
+
+    .carousel-inner img {
+      max-width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-specs {
+      margin-top: 40px;
+    }
+
+    .btn-pre-order {
+      background-color: #e60012;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn-pre-order:hover {
+      background-color: #a80114;
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark px-4" style="background-color: #e60012;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Nintendo.svg" alt="Nintendo Logo">
+          </a>
+          
+          <a href="#" class="text-white fw-bold fs-4 position-absolute start-50 translate-middle-x" style="text-decoration: none;">Click-On</a>
+          
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+          </form>
+        </div>
+      </nav>
+
+  <div class="container product-section">
+    <h2 class="product-title text-center">Nintendo Switch 2</h2>
+
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1000/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Hardware/123669-nintendo-switch-2-package-front-2000x2000"
+            class="d-block w-100" alt="Nintendo Switch 2 Image 1">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <p class="product-description text-center">
+        The <b>Nintendo Switch 2</b> redefines portable gaming with groundbreaking advancements. Immerse yourself in stunning 4K resolution on your TV, or take your
+        gaming experience on the go with enhanced performance in handheld mode. Boasting significantly improved graphics, extended battery life, and a diverse, expanding
+        library of games, the <b>Switch 2</b> ensures you'll never run out of adventure. With faster load times and smoother gameplay, every moment feels more dynamic.
+        Step into the next generation of gaming and experience the future with the <b>Switch 2</b> today!
+    </p>
+
+    <div class="feature-list text-center">
+      <h3 class="fw-bold">Key Features:</h3>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-check-circle"></i> Stunning 4K output for an immersive TV gaming experience</li>
+        <li><i class="bi bi-check-circle"></i> Improved portability with a lighter, more ergonomic design</li>
+        <li><i class="bi bi-check-circle"></i> Expanded game library with exclusive titles</li>
+        <li><i class="bi bi-check-circle"></i> Enhanced battery life for up to 10 hours of continuous play</li>
+        <li><i class="bi bi-check-circle"></i> Better Joy-Con with enhanced motion control</li>
+      </ul>
+    </div>
+
+    <div class="product-specs text-center">
+      <h3 class="fw-bold">Product Specifications:</h3>
+      <table class="table table-bordered table-striped">
+        <tbody>
+          <tr>
+            <th>Display</th>
+            <td>7-inch OLED with 1280 x 720 resolution</td>
+          </tr>
+          <tr>
+            <th>Processor</th>
+            <td>Custom Nvidia Tegra X2</td>
+          </tr>
+          <tr>
+            <th>Storage</th>
+            <td>64GB (expandable via microSD)</td>
+          </tr>
+          <tr>
+            <th>Connectivity</th>
+            <td>Wi-Fi, Bluetooth 5.0, USB-C</td>
+          </tr>
+          <tr>
+            <th>Battery</th>
+            <td>Up to 10 hours (varies by usage)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="video-container text-center">
+      <iframe width="100%" height="500" src="https://www.youtube.com/watch?v=IHF9R00lZvs" title="Intro – Nintendo Switch 2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="#" class="btn btn-pre-order btn-lg">Pre-order</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container text-white">
+      <div class="mb-4">
+        <h5 class="fw-bold">Contact Us</h5>
+        <p>Have questions or feedback? Email us at:
+          <a href="mailto:clickon.group@email.com" class="text-white text-decoration-underline">clickon.group@email.com</a>
+        </p>
+      </div>
+      <p class="mt-4">&copy; 2025 Click-On</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
